@@ -12,3 +12,7 @@ app.configure(function(){
 app.get('*', function (req, res) {
     res.render('index');
 }); //all requests hit the wildcard asterisk as opposed to a route '/courses'
+
+var port = 3030;
+app.listen(port);
+console.log('Listening on port ' + port + '...');
